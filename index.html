@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebForms for websites</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-line">
+                <h1>Форми</h1>
+            </div>
+            <div class="firstform">
+                <h2>01. проста форма</h2>
+                <form action="" method="get">
+                    <div class="inp">
+                        <div class="name">
+                            <input type="text" placeholder="Введіть ім’я">
+                        </div>
+                        <div class="e-adress">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <select name="">
+                            <option value="" disabled selected>Ваше місто</option>
+                            <option value="">Київ</option>
+                            <option value="">Львів</option>
+                            <option value="">Хмельницький</option>
+                        </select>
+                        <div class="text">
+                            <textarea placeholder="Email"></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Зареєструватися</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="secondform">
+                <h2>02. елементи</h2>
+                <form action="" method="get">
+                    <div class="radiocheckbox">
+                        <div class="radios">
+                            <p>
+                                <input type="radio" name="radio" id="r1" class="blueradio">
+                                <label for="r1" class="bluelabel">Нова Пошта</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="radio" id="r2" class="blueradio">
+                                <label for="r2" class="bluelabel">Кур’єр</label>
+                            </p>
+                            <p class="dis-abled">
+                                <input type="radio" name="radio" id="r3" class="blueradio" disabled>
+                                <label for="r3" class="bluelabel">Самовивіз</label>
+                            </p>
+                        </div>
+                        <div class="checkboxes">
+                            <p>
+                                <input type="checkbox" id="ch1" class="check">
+                                <label for="ch1" class="checklabel">Прочитав умови договору</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="ch2" class="check">
+                                <label for="ch2" class="checklabel">Згідний з ПДВ 9%</label>
+                            </p>
+                            <p class="dis-abled">
+                                <input type="checkbox" id="ch3" class="check" disabled>
+                                <label for="ch3" class="checklabel">Отримувати новини на ел. пошту</label>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="stat-date">
+                        <div class="status">
+                            <p>Статус</p>
+                            <div class="chebox">
+                                <input type="checkbox" class="check" id="check1">
+                                <label for="check1" class="checklabel">Новинки</label>
+                                <input type="checkbox" class="check" id="check2">
+                                <label for="check2" class="checklabel">Акційні товари</label>
+                                <input type="checkbox" class="check" id="check3">
+                                <label for="check3" class="checklabel">Розпродаж</label>
+                            </div>
+                        </div>
+                        <div class="date">
+                            <p>Дата</p>
+                            <p>
+                                <input type="date" id="time">
+                                <label for="time"></label>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="thirdform">
+                <h2>03. стилізовані чекбокси </h2>
+                <form action="" method="get">
+                    <div class="racheck">
+                        <div class="radio">
+                            <p class="man">
+                                <input type="radio" id="man" name="radio2">
+                                <label for="man">Чоловік</label>
+                            </p>
+                            <p class="woman">
+                                <input type="radio" id="woman" name="radio2">
+                                <label for="woman">Жінка</label>
+                            </p>
+                        </div>
+                        <div class="checkbox">
+                            <p>
+                                <input type="checkbox" id="box1">
+                                <label for="box1">Отримувати новини</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="box2">
+                                <label for="box2">Купити додому ковбаси</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="box3">
+                                <label for="box3">Включити світло</label>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

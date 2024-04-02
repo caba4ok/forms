@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-MediumItalic.woff') format('woff'),
+        url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-LightItalic.woff') format('woff'),
+        url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-BoldItalic.woff') format('woff'),
+        url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/Roboto-Black.woff') format('woff'),
+        url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto-Italic.woff') format('woff'),
+        url('../fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-BlackItalic.woff') format('woff'),
+        url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/Roboto-Thin.woff') format('woff'),
+        url('../fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-ThinItalic.woff') format('woff'),
+        url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 100%;
+    margin: 50px 0;
+    border: none;
+    border-top: 1px solid #dcdcde;
+}
+
+.wrapper {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+input,
+select,
+option,
+textarea {
+    width: 100%;
+}
+
+.header-line h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 77px;
+    padding-bottom: 71px;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+    padding-bottom: 28px;
+}
+
+.text {
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.firstform textarea {
+    outline: none;
+    min-height: 131px;
+    max-height: 151px;
+    height: 100%;
+    width: 100%;
+    resize: vertical;
+    font-family: "Roboto";
+    padding: 16px 17px;
+}
+
+.firstform textarea::placeholder {
+    font-family: "Roboto";
+}
+
+.firstform input,
+.inp select {
+    padding: 13px 17px;
+    outline: none;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inp>select {
+    margin-bottom: 9px;
+}
+
+.inp,
+.firstform {
+    max-width: 331px;
+}
+
+.name,
+.e-adress,
+.btn {
+    margin-bottom: 9px;
+    width: 331px;
+}
+
+.btn button {
+    display: block;
+    padding: 13px 0;
+    width: 100%;
+    border: none;
+    background-color: #12d661;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.radios p+p,
+.checkboxes p+p {
+    margin-top: 19px;
+}
+
+.secondform form,
+.radiocheckbox {
+    justify-content: space-between;
+}
+
+.secondform form,
+.radios,
+.checkboxes,
+.radiocheckbox {
+    display: flex;
+}
+
+.radios,
+.checkboxes {
+    flex-direction: column;
+}
+
+.radios {
+    padding-right: 61px;
+}
+
+.blueradio,
+.check {
+    display: none;
+}
+
+
+.blueradio+.bluelabel {
+    position: relative;
+    padding-left: 27px;
+}
+
+.blueradio+.bluelabel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+}
+
+.blueradio:checked+.bluelabel::after,
+.blueradio:disabled+.bluelabel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #3e6aff;
+    border-radius: 50%;
+}
+
+.blueradio:checked+.bluelabel::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #3e6aff;
+}
+
+.blueradio:disabled+.bluelabel::before,
+.check:disabled+.checklabel::before {
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.blueradio:disabled+.bluelabel,
+.check:disabled+.checklabel {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio input+label {
+    position: relative;
+}
+
+.radio input+label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stat-date {
+    width: 474px;
+    height: 115px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.status,
+.date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.status p,
+.date p {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.status p,
+.chebox,
+.date p {
+    padding-left: 21px;
+    padding-top: 25px;
+}
+
+.chebox {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+}
+
+.check+.checklabel {
+    position: relative;
+    padding-left: 27px;
+}
+
+.check+.checklabel::before,
+.check:disabled+.checklabel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+.check:checked+.checklabel::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 5px;
+    height: 7px;
+    border-top: 3px solid #244dd7;
+    border-left: 3px solid #244dd7;
+    transform: rotate(-135deg);
+}
+
+.check:checked+.checklabel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #244dd7;
+}
+
+.status .check+.checklabel::before {
+    background-color: #ffffff;
+}
+
+.date p {
+    padding-top: 32px;
+}
+
+.date {
+    column-gap: 45px;
+}
+
+.racheck {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 30%;
+}
+
+.man,
+.woman {
+    display: flex;
+}
+
+.thirdform h2 {
+    margin-bottom: 34px;
+}
+
+.man input+label,
+.woman input+label {
+    position: relative;
+    padding: 30px 0 30px 86px;
+}
+
+.man input+label::before,
+.man input:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 71px;
+    height: 71px;
+}
+
+.man input:checked+label::after {
+    background: url(../img/colorman.png);
+}
+
+.man input+label::before {
+    background: url(../img/blackman.png);
+}
+
+.woman input+label::before,
+.woman input:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 71px;
+    height: 71px;
+}
+
+.woman input:checked+label::after {
+    background: url(../img/Woman.png);
+}
+
+.woman input+label::before {
+    background: url(../img/blackwoman.png);
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox p+p {
+    margin-top: 31px;
+}
+
+.checkbox input+label {
+    position: relative;
+    padding-left: 65px;
+}
+
+.checkbox input+label::before,
+.checkbox input:checked+label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 26px;
+    background-color: #cfcfd1;
+    border-radius: 12px;
+    transition: all .5s ease;
+}
+
+.checkbox input+label::after,
+.checkbox input+label::after {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    width: 21px;
+    height: 21px;
+    border-radius: 11px;
+    background-color: #ffffff;
+    transition: all .5s ease;
+}
+
+.checkbox input:checked+label:before {
+    background-color: #3e6aff;
+    transition: all .5s ease;
+}
+
+.checkbox input:checked+label::after {
+    left: 22px;
+    transition: all .5s ease;
+}
