@@ -288,6 +288,11 @@ h2 {
     text-decoration: none;
 }
 
+.sixthform_width label {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
 a.cancel {
     position: absolute;
     top: 11px;
@@ -642,6 +647,10 @@ tbody p {
     align-items: center;
 }
 
+.gender_man {
+    padding-right: 23px;
+}
+
 .t1 td:nth-child(2),
 .t2 td:nth-child(2),
 .t3 :nth-child(2) {
@@ -717,6 +726,7 @@ tbody p {
 }
 
 .purchase-submit {
+    padding: 13px 25px;
     border-radius: 3px;
     background-color: #12d661;
     font-size: 14px;
