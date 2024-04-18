@@ -239,17 +239,20 @@ h2 {
 }
 
 .sixthform {
-    max-width: 331px;
-    max-height: 283px;
+    z-index: 2;
+    width: 331px;
 }
 
 .sixthform_form {
+    position: fixed;
     border-radius: 5px;
+    right: 0;
     filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
     width: 100%;
-    height: 100%;
+    max-width: 331px;
+    transform: translateX(-58%);
 }
 
 .sixthform_form label:not(:nth-child(7)) {
@@ -268,8 +271,8 @@ h2 {
     font-family: "Roboto";
     text-align: center;
     border: none;
-    padding: 20px;
-    max-width: 261px;
+    padding: 14px;
+    min-width: 261px;
     width: 100%;
 }
 
@@ -285,8 +288,27 @@ h2 {
     text-decoration: none;
 }
 
+a.cancel {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    color: #b3b3b3;
+    font: 'Roboto';
+}
+
+.forgot_password {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.keycode>label {
+    font-size: 13px;
+    color: black;
+    font-family: 'Roboto';
+}
+
 .sixthform_width {
-    padding: 50px;
+    padding: 25px;
 }
 
 .radios p+p,
