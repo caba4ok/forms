@@ -168,6 +168,11 @@ h2 {
     margin-bottom: 9px;
 }
 
+.first_sixthform {
+    display: flex;
+    justify-content: space-between;
+}
+
 .firstform textarea,
 .forthform textarea {
     outline: none;
@@ -187,8 +192,11 @@ h2 {
 .firstform input,
 .inp select,
 .t1 input,
-.t1 select {
-    padding: 13px 17px;
+.t1 select,
+.fifthform input,
+.fifthform select,
+.sixthform_form input {
+    padding: 11.5px 17px;
     outline: none;
 }
 
@@ -216,7 +224,7 @@ h2 {
 }
 
 .btn button,
-.forthform button {
+.register {
     display: block;
     padding: 13px 0;
     width: 100%;
@@ -228,6 +236,35 @@ h2 {
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
+}
+
+.sixthform {
+    max-width: 331px;
+}
+
+.sixthform_form {
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+.sixthform_form label:not(:nth-child(7)) {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.sixthform_form button {
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    border: none;
 }
 
 .radios p+p,
@@ -333,6 +370,7 @@ h2 {
     width: 474px;
     height: 115px;
     border-radius: 3px;
+    padding: 21px;
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
 }
@@ -344,18 +382,25 @@ h2 {
     align-items: center;
 }
 
+.status {
+    column-gap: 33px;
+    margin-bottom: 32px;
+}
+
+.sell,
+.chebox label {
+    font-size: 14px;
+}
+
+.sell {
+    min-width: 130px;
+}
+
 .status p,
 .date p {
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 700;
-}
-
-.status p,
-.chebox,
-.date p {
-    padding-left: 21px;
-    padding-top: 25px;
 }
 
 .chebox {
@@ -405,10 +450,6 @@ h2 {
 
 .status .check+.checklabel::before {
     background-color: #ffffff;
-}
-
-.date p {
-    padding-top: 32px;
 }
 
 .date {
@@ -528,10 +569,10 @@ h2 {
 }
 
 table {
-    width: 500px;
+    width: 100%;
 }
 
-tbody tr {
+.formverification tr {
     display: flex;
     row-gap: 19px;
     width: 100%;
@@ -542,13 +583,102 @@ tbody p {
     min-width: 91px;
 }
 
-.recomendedspace {
+.recomendedspace,
+.buyform {
     font-size: 18px;
     color: #1f222c;
     font-weight: 700;
     margin-bottom: 25px;
 }
 
+.t1,
+.t3 textarea,
 .t2 {
-    margin-bottom: 19px;
+    margin-bottom: 14px;
+    align-items: center;
+}
+
+.t1 td:nth-child(2),
+.t2 td:nth-child(2),
+.t3 :nth-child(2) {
+    width: 341px;
+}
+
+.t2 {
+    padding: 5px 0;
+}
+
+.filechoose {
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    border-radius: 3px;
+    background-color: #3e6aff;
+    padding: 12px 37px;
+}
+
+.fifthform {
+    max-width: 681px;
+}
+
+.fifthform tbody tr:first-child td {
+    padding-bottom: 6px;
+}
+
+.fifthform table,
+.fifthform tr,
+.fifthform td {
+    border-collapse: collapse;
+}
+
+.fifthform td {
+    min-width: 221px;
+}
+
+.fifthform td+td {
+    padding-left: 9px;
+}
+
+.fifthform table label {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-bottom: 6px;
+}
+
+.inpmb {
+    margin-bottom: 29px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 144px;
+}
+
+.back-to {
+    padding: 13px 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #85868d;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.purchase-submit {
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    border: none;
 }
