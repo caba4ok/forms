@@ -757,3 +757,28 @@ tbody p {
     text-align: center;
     border: none;
 }
+
+.contryl {
+    position: relative;
+}
+
+.country {
+    padding: 17px 14px;
+    border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.contryl::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border: 7px solid transparent;
+    border-top-color: #1f222c;
+    z-index: -1;
+}
