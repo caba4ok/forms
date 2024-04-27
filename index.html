@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebForms for websites | Made By Fion4ik :3</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -76,7 +79,7 @@
                             <p>
                                 <input type="radio" name="radio" id="r1" class="blueradio">
                                 <label for="r1" class="bluelabel"></label>
-                                <span>Нова Пошта</span>
+                                <span class="bluespan">Нова Пошта</span>
                             </p>
                             <p>
                                 <input type="radio" name="radio" id="r2" class="blueradio">
@@ -85,7 +88,8 @@
                             </p>
                             <p class="dis-abled">
                                 <input type="radio" name="radio" id="r3" class="blueradio" disabled>
-                                <label for="r3" class="bluelabel">Самовивіз</label>
+                                <label for="r3" class="bluelabel"></label>
+                                <span class="bluedisabled bluespan">Самовивіз</span>
                             </p>
                         </div>
                         <div class="checkboxes">
@@ -196,11 +200,13 @@
                                 <td>
                                     <p>Стать:</p>
                                 </td>
-                                <td>
+                                <td class="gender_choose">
                                     <input type="radio" name="radio1" class="blueradio" id="rdi1">
-                                    <label for="rdi1" class="bluelabel gender_man">Чоловік</label>
+                                    <label for="rdi1" class="bluelabel gender_man"></label>
+                                    <span class="bluespan">Чоловік</span>
                                     <input type="radio" name="radio1" class="blueradio" id="rdi2">
-                                    <label for="rdi2" class="bluelabel">Жінка</label>
+                                    <label for="rdi2" class="bluelabel"></label>
+                                    <span class="bluespan">Жінка</span>
                                 </td>
                             </tr>
                             <tr class="t1">
