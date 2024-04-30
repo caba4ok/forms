@@ -707,8 +707,19 @@ tbody p {
     align-items: center;
 }
 
-.gender_man {
-    padding-right: 23px;
+.g-man,
+.g-woman {
+    padding-left: 32px;
+}
+
+.blueradio + .gender_man::before,
+.blueradio + .gender_woman::before,
+.blueradio:checked + .gender_man::after,
+.blueradio:checked + .gender_woman::after
+.blueradio:checked + .gender_man::before,
+.blueradio:checked + .gender_woman::before {
+    left: 0;
+    transform: translate(50%, -50%);
 }
 
 .t1 td:nth-child(2),
