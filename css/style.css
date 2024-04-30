@@ -139,6 +139,11 @@ h1 {
     font-family: "Roboto Slab";
 }
 
+select,
+span {
+    cursor: pointer;
+}
+
 .wrapper {
     max-width: 990px;
     margin: 0 auto;
@@ -712,16 +717,6 @@ tbody p {
     padding-left: 32px;
 }
 
-.blueradio + .gender_man::before,
-.blueradio + .gender_woman::before,
-.blueradio:checked + .gender_man::after,
-.blueradio:checked + .gender_woman::after
-.blueradio:checked + .gender_man::before,
-.blueradio:checked + .gender_woman::before {
-    left: 0;
-    transform: translate(50%, -50%);
-}
-
 .t1 td:nth-child(2),
 .t2 td:nth-child(2),
 .t3 :nth-child(2) {
@@ -738,6 +733,7 @@ tbody p {
 }
 
 .filechoose {
+    transition: all .5s ease;
     border: none;
     font-size: 14px;
     color: #ffffff;
@@ -747,6 +743,12 @@ tbody p {
     border-radius: 3px;
     background-color: #3e6aff;
     padding: 12px 37px;
+}
+
+.filechoose:hover {
+    border-radius: 3px;
+    filter: drop-shadow(0px 2px 2.5px rgba(15, 40, 126, 0.35));
+    background-color: #2857f4;
 }
 
 .fifthform {
